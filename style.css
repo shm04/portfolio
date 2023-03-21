@@ -1,0 +1,64 @@
+@media only screen and (max-width: 375px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  #header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #menu-btn {
+    margin: 35px 41px 0 0;
+  }
+
+  .presentation {
+    background-image: url(imgs-p/header-illsutration-mobile@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .main-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #172b4d;
+    line-height: 20px;
+  }
+
+  #greet-title {
+    padding-top: 50px;
+  }
+
+  #pres-title {
+    color: #36b37e;
+    line-height: 50px;
+  }
+
+  #pres-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    margin: 15px 27px 23px 27px;
+  }
+
+  .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logos img {
+    margin-right: 20px;
+  }
+
+  .pres-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+}
