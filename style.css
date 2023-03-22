@@ -3,13 +3,13 @@ body {
   margin: 0;
 }
 
-#navbar {
+.navbar {
   display: flex;
   justify-content: flex-end;
 }
 
-#menu-btn {
-  margin: 35px 41px 0 0;
+.navbar img {
+  margin: 35px 41px 20px 0;
 }
 
 .presentation {
@@ -18,34 +18,37 @@ body {
   background-size: contain;
 }
 
-.main-title {
+.presentation h1,
+h2,
+h3 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
   color: #172b4d;
-  line-height: 20px;
+  line-height: 52px;
+  margin: 0;
 }
 
-#greet-title {
-  padding-top: 50px;
+.presentation h1 {
+  padding-top: 63px;
 }
 
-#pres-title {
+.presentation h3 {
   color: #36b37e;
-  line-height: 50px;
 }
 
-#pres-text {
+.presentation p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
   margin: 15px 27px 23px 27px;
+  color: #172b4d;
 }
 
-.logos {
+.logos ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,4 +63,203 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 80px;
+}
+
+.works-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.works-section h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin: 63px 28px 24px 26px;
+  color: #172b4d;
+}
+
+.line {
+  align-self: center;
+  margin-bottom: 62px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.text-container {
+  position: absolute;
+  bottom: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 327px;
+  border-radius: 8px;
+}
+
+.text-container h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #3a4a42;
+  margin: 16px;
+}
+
+.text-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me-card li {
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 0 8px 8px 0;
+}
+
+.text-container li:nth-child(1),
+.text-container li:nth-child(2),
+.text-container li:nth-child(3) {
+  background-color: #ebf0ee;
+  padding: 8px 12px 8px 12px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.html-li {
+  background-color: #ebf0ee;
+  padding: 8px 12px 8px 12px;
+  border-radius: 4px;
+}
+
+.text-container button {
+  margin: 29px 0 24px 0;
+  width: 122px;
+  height: 48px;
+  background-color: #36b37f;
+  border-radius: 4px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.about-main {
+  background-image: url(imgs-p/about-me-1.png), url(imgs-p/about-me-2.png);
+  background-repeat: no-repeat;
+  background-position: top 0 right 0, bottom 0 left 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-main h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin: 68px 0 0 0;
+}
+
+.about-main p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  margin: 24px 18px 24px 12px;
+  color: #42526e;
+}
+
+.about-main button {
+  width: 153px;
+  height: 48px;
+  background-color: #36b37f;
+  border-radius: 4px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.about-me-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 59px;
+  gap: 24px;
+}
+
+.about-me-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebf0ee;
+  width: 327px;
+  border-radius: 8px;
+}
+
+.about-me-card img {
+  margin-top: 40px;
+}
+
+.about-me-card h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+  margin: 0;
+}
+
+.about-me-card ul {
+  list-style: none;
+  margin: 24px 0 24px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
 }
