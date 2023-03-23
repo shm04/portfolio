@@ -35,7 +35,7 @@ h3 {
 }
 
 .presentation h3 {
-  color: #36b37e;
+  color: #1e488f;
 }
 
 .presentation p {
@@ -70,7 +70,7 @@ h3 {
   flex-direction: column;
 }
 
-.works-section h1 {
+.works-section h2 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -111,7 +111,7 @@ h3 {
   border-radius: 8px;
 }
 
-.text-container h1 {
+.text-container h2 {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -161,7 +161,7 @@ h3 {
   margin: 29px 0 24px 0;
   width: 122px;
   height: 48px;
-  background-color: #36b37f;
+  background-color: #1e488f;
   border-radius: 4px;
   border: none;
   font-family: 'Inter', sans-serif;
@@ -182,7 +182,7 @@ h3 {
   justify-content: center;
 }
 
-.about-main h1 {
+.about-main h2 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -205,7 +205,7 @@ h3 {
 .about-main button {
   width: 153px;
   height: 48px;
-  background-color: #36b37f;
+  background-color: #1e488f;
   border-radius: 4px;
   border: none;
   font-family: 'Inter', sans-serif;
@@ -216,6 +216,22 @@ h3 {
   color: #fff;
 }
 
+.about-main button:hover {
+  box-shadow: 0 5px 15px rgba(30, 72, 143, 0.24);
+}
+
+.about-main button:active {
+  background-color: #0a2759;
+}
+
+.text-container button:hover {
+  box-shadow: 0 5px 15px rgba(30, 72, 143, 0.24);
+}
+
+.text-container button:active {
+  background-color: #0a2759;
+}
+
 .about-me-cards {
   display: flex;
   flex-direction: column;
@@ -223,6 +239,7 @@ h3 {
   justify-content: center;
   margin-top: 59px;
   gap: 24px;
+  padding: 0;
 }
 
 .about-me-card {
@@ -239,7 +256,7 @@ h3 {
   margin-top: 40px;
 }
 
-.about-me-card h1 {
+.about-me-card h2 {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -261,5 +278,5 @@ h3 {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  color: #36b37e;
+  color: #1e488f;
 }
