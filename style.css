@@ -202,7 +202,8 @@ h3 {
   color: #42526e;
 }
 
-.about-main button {
+.about-main button,
+.contact-form button {
   width: 153px;
   height: 48px;
   background-color: #1e488f;
@@ -279,4 +280,62 @@ h3 {
   font-size: 12px;
   line-height: 16px;
   color: #1e488f;
+}
+
+.contact-form {
+  margin: 0 30px 0 24px;
+}
+
+.contact-form h2 {
+  margin-top: 54px;
+}
+
+.contact-form form {
+  margin-top: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-form button {
+  width: 153px;
+  height: 48px;
+  background-color: #1e488f;
+  border-radius: 4px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  align-self: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+  padding: 12px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 31px;
+  margin-bottom: 45px;
+}
+
+.footer a {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  color: #42526e;
 }
