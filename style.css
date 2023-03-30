@@ -183,6 +183,7 @@ h3 {
   line-height: 24px;
   text-align: center;
   color: #fff;
+  transition: all 0.5s ease-in-out;
 }
 
 .about-main {
@@ -228,14 +229,19 @@ h3 {
   line-height: 24px;
   text-align: center;
   color: #fff;
+  transition: all 0.5s ease-in-out;
 }
 
 .contact-form button {
   align-self: center;
 }
 
-.about-main button:hover {
+.about-main button:hover,
+.contact-form button:hover {
   box-shadow: 0 5px 15px rgba(30, 72, 143, 0.24);
+  border: 1px solid #1e488f;
+  background-color: #fff;
+  color: #1e488f;
 }
 
 .about-main button:active {
@@ -244,6 +250,10 @@ h3 {
 
 .text-container button:hover {
   box-shadow: 0 5px 15px rgba(30, 72, 143, 0.24);
+  border: 1px solid #1e488f;
+  background-color: #fff;
+  color: #1e488f;
+
 }
 
 .text-container button:active {
@@ -384,7 +394,7 @@ h3 {
   }
 
   .navbar a:hover {
-    font-size: 20px;
+    transform: scale(1.2);
     background-color: #172b4d;
     color: #fff;
     border-radius: 15px;
