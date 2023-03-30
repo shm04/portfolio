@@ -363,6 +363,10 @@ h3 {
 
   .navbar {
     justify-content: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 
   .navbar img {
@@ -371,10 +375,19 @@ h3 {
 
   .navbar a {
     display: block;
-    padding: 20px;
+    padding: 8px;
     text-decoration: none;
     color: #172b4d;
     font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+  }
+
+  .navbar a:hover {
+    font-size: 20px;
+    background-color: #172b4d;
+    color: #fff;
+    border-radius: 15px;
   }
 
   .presentation {
