@@ -8,6 +8,10 @@ body {
   justify-content: flex-end;
 }
 
+.navbar a {
+  display: none;
+}
+
 .navbar img {
   margin: 35px 41px 20px 0;
 }
@@ -15,7 +19,8 @@ body {
 .presentation {
   background-image: url(imgs-p/header-illsutration-mobile@2x.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center center;
 }
 
 .presentation h1,
@@ -97,18 +102,25 @@ h3 {
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 86%;
+  margin: 0 7% 0 7%;
+}
+
+.card img {
+  width: 100%;
 }
 
 .text-container {
   position: absolute;
-  bottom: 1px;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  width: 327px;
   border-radius: 8px;
+  width: 99.5%;
+  border: 1px solid #d0d9d4;
 }
 
 .text-container h2 {
@@ -124,7 +136,7 @@ h3 {
 .text-container ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -133,6 +145,7 @@ h3 {
   color: #3a4a42;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .about-me-card li {
@@ -218,17 +231,6 @@ h3 {
 }
 
 .contact-form button {
-  width: 153px;
-  height: 48px;
-  background-color: #1e488f;
-  border-radius: 4px;
-  border: none;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
-  color: #fff;
   align-self: center;
 }
 
@@ -324,6 +326,8 @@ h3 {
   line-height: 24px;
   color: #6b778c;
   padding: 12px;
+  border-radius: 4px;
+  border: solid 1px #d0d9d4;
 }
 
 .footer {
@@ -342,4 +346,159 @@ h3 {
   text-decoration: none;
   color: #42526e;
   margin-bottom: 29px;
+}
+
+@media screen and (min-width: 768px) {
+  * {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .header {
+    background-image: url(imgs-p/option2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top 0;
+    padding-bottom: 395px;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar img {
+    display: none;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #172b4d;
+    font-weight: 600;
+  }
+
+  .presentation {
+    background-image: none;
+  }
+
+  .presentation h1,
+  h2 {
+    padding: 170px 10px 10px 0;
+  }
+
+  .presentation h1,
+  h2,
+  h3 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 800;
+  }
+
+  .titles {
+    display: flex;
+    justify-content: center;
+  }
+
+  .presentation p {
+    margin: 24px 25% 34px 25%;
+  }
+
+  .works-section {
+    margin: 0 8% 0 8%;
+  }
+
+  .works-section h2 {
+    padding: 100px 0 52px 0;
+    margin: 0;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 32px;
+    grid-column-gap: 24px;
+  }
+
+  .text-container h2 {
+    padding: 0;
+    margin: 16px;
+  }
+
+  .about-main {
+    background-image: none;
+    background-image: url(imgs-p/illustration-about-me-desktop.png), url(imgs-p/illustration-about-me-2-desktop.png);
+    background-size: contain, inherit;
+    background-repeat: no-repeat;
+    background-position: top 89px right 0, bottom 15px left 0;
+  }
+
+  .about-main h2 {
+    padding: 192px 0 0 0;
+    margin: 0;
+  }
+
+  .about-main p {
+    margin: 24px 25% 34px 25%;
+  }
+
+  .about-me-cards {
+    margin: 70px 0 0 0;
+    flex-direction: row;
+  }
+
+  .about-me-card {
+    height: 336px;
+    justify-content: flex-start;
+  }
+
+  .about-me-card h2 {
+    padding: 0;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: none;
+    background-image: url(imgs-p/illustration-1-contact-form-desktop.png), url(imgs-p/illustration-2-contact-form-desktop@2x.png), url(imgs-p/contact\ form-illustratoin-3-desktop.png);
+    background-position: left 0 bottom 85px, left 280px bottom 175px, right 0 bottom 93px;
+  }
+
+  .contact-form {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 98px;
+    width: 62%;
+    padding-bottom: 238px;
+  }
+
+  .contact-form h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    width: 40%;
+  }
+
+  .contact-form form {
+    margin: 0;
+    width: 60%;
+  }
+
+  .contact-form button {
+    align-self: flex-start;
+  }
+
+  .footer {
+    border-top: solid 1px #dfe1e6;
+    margin: 0;
+    width: 100%;
+  }
+
+  .email {
+    display: none;
+  }
 }
