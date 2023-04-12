@@ -699,5 +699,41 @@ h3 {
     transform: scale(1.1);
   }
 
-  /* Please paste it here */
+  .cont-row {
+    display: flex;
+  }
+
+  .popup h1 {
+    width: 50%;
+    font-weight: 700;
+  }
+
+  .buttons {
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 27px;
+    width: 50%;
+    flex-wrap: wrap;
+  }
+
+  .buttons a {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 2px;
+  }
+
+  .two {
+    display: flex;
+  }
+
+  .one {
+    display: none;
+  }
+
+  .navbar a:hover {
+    transform: scale(1.2);
+    background-color: #172b4d;
+    color: #fff;
+    border-radius: 15px;
+  }
 }
