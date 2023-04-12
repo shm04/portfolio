@@ -114,24 +114,6 @@ seeBtn.forEach((seeBtn) => {
     </div>
     `;
 
-    card.forEach((card) => {
-      card.appendChild(popup);
-    });
-
-    const closeBtn = document.querySelector('.close-button');
-
-    card.forEach((card) => {
-      closeBtn.addEventListener('click', () => {
-        card.removeChild(popup);
-      });
-    });
-
-    const closeBtnDesktop = document.querySelector('.close-button-desktop');
-
-    card.forEach((card) => {
-      closeBtnDesktop.addEventListener('click', () => {
-        card.removeChild(popup);
-      });
-    });
+    // Please paste here
   });
 });
