@@ -701,7 +701,7 @@ h3 {
 
   .popup-img {
     width: 100%;
-    height: 40%;
+    min-height: 50%;
   }
 
   .cont-row {
