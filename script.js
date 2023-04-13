@@ -93,12 +93,13 @@ seeBtn.forEach((seeBtn) => {
     <div class="popup">
       <button class="close-button-desktop" type="button"><img src="./imgs-p/close-popup-desktop.png"></button>
       <button class="close-button" type="button"><img src="./imgs-p/close-icon-white.png"></button>
-      <img src=${project.image} alt="project-image">
+      <img class="popup-img" src=${project.image} alt="project-image">
+      <div class="popup-card">
       <div class="cont-row">
         <h1>${project.title}</h1>
         <div class="buttons two">
-          <a href="${project.liveVersion}">See live<img src="/imgs-p/see-live-icon.png"></a>
-          <a href="${project.source}">See source<img src="/imgs-p/github-white.png"></a>
+          <a href="${project.liveVersion}">See live<img src="./imgs-p/see-live-icon.png"></a>
+          <a href="${project.source}">See source<img src="./imgs-p/github-white.png"></a>
         </div>
       </div>
       <ul>
@@ -110,7 +111,7 @@ seeBtn.forEach((seeBtn) => {
       <div class="buttons one">
           <a href="${project.liveVersion}">See live<img src="/imgs-p/see-live-icon.png"></a>
           <a href="${project.source}">See source<img src="/imgs-p/github-white.png"></a>
-      </div>
+      </div></div>
     </div>
     `;
 
