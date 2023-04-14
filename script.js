@@ -38,7 +38,7 @@ const projects = {
     title: 'Keeping track of hundreds of components',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo error impedit odit blanditiis ducimus ipsum, tenetur repudiandae aperiam repellat. Vero deserunt porro necessitatibus dolor adipisci, suscipit quo laborum beatae quam.',
     image: './imgs-p/popup-desktop.png',
-    tech: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap'],
+    tech: ['Codekit', 'GitHub', 'JavaScript'],
     liveVersion: '#',
     source: '#',
   },
