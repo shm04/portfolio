@@ -110,7 +110,7 @@ h3 {
   flex-direction: column;
 }
 
-.works-section h2 {
+.works-section h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -136,9 +136,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  width: 86%;
-  margin: 0 7% 0 7%;
+  margin: 0 26px 0 28px;
 }
 
 .card img {
@@ -146,19 +144,17 @@ h3 {
 }
 
 .text-container {
-  position: absolute;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fff;
   border-radius: 8px;
-  width: 99.5%;
+  width: 100%;
   border: 1px solid #d0d9d4;
 }
 
-.text-container h2 {
+.text-container h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -534,6 +530,10 @@ h3 {
     gap: 20px;
   }
 
+  .navbar button {
+    display: none;
+  }
+
   .navbar img {
     display: none;
   }
@@ -578,7 +578,7 @@ h3 {
     margin: 0 8% 0 8%;
   }
 
-  .works-section h2 {
+  .works-section h1 {
     padding: 100px 0 52px 0;
     margin: 0;
   }
@@ -593,7 +593,11 @@ h3 {
     grid-column-gap: 24px;
   }
 
-  .text-container h2 {
+  .text-container {
+    height: 280px;
+  }
+
+  .text-container h1 {
     padding: 0;
     margin: 16px;
   }
@@ -711,6 +715,8 @@ h3 {
   .popup h1 {
     width: 50%;
     font-weight: 700;
+    padding: 24px 0 20px 0;
+    text-align: start;
   }
 
   .buttons {

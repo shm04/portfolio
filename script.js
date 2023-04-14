@@ -24,7 +24,8 @@ navLink.forEach((navLink) => {
 
 const projects = {
   project1: {
-    title: ['Keeping track of hundreds of components'],
+    id: 1,
+    title: 'Keeping track of hundreds of components',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo error impedit odit blanditiis ducimus ipsum, tenetur repudiandae aperiam repellat. Vero deserunt porro necessitatibus dolor adipisci, suscipit quo laborum beatae quam.',
     image: './imgs-p/popup-img.png',
     tech: ['Ruby on rials', 'CSS', 'JavaScript'],
@@ -33,16 +34,18 @@ const projects = {
   },
 
   project2: {
-    title: ['Keeping track of hundreds of components'],
+    id: 2,
+    title: 'Keeping track of hundreds of components',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo error impedit odit blanditiis ducimus ipsum, tenetur repudiandae aperiam repellat. Vero deserunt porro necessitatibus dolor adipisci, suscipit quo laborum beatae quam.',
     image: './imgs-p/popup-desktop.png',
-    tech: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    tech: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap'],
     liveVersion: '#',
     source: '#',
   },
 
   project3: {
-    title: ['Multi-Post Stories', 'Gain+Glory'],
+    id: 3,
+    title: 'Multi-Post Stories Gain+Glory',
     description: 'This is project 3',
     image: './imgs-p/popup-img.png',
     tech: ['Ruby on rials', 'CSS', 'JavaScript', 'HTML'],
@@ -51,7 +54,8 @@ const projects = {
   },
 
   project4: {
-    title: ['Multi-Post Stories', 'Gain+Glory'],
+    id: 4,
+    title: 'Multi-Post Stories Gain+Glory',
     description: 'This is project 4',
     image: './imgs-p/popup-desktop.png',
     tech: ['Ruby on rials', 'CSS', 'JavaScript', 'HTML'],
@@ -60,7 +64,8 @@ const projects = {
   },
 
   project5: {
-    title: ['Multi-Post Stories', 'Gain+Glory'],
+    id: 5,
+    title: 'Multi-Post Stories Gain+Glory',
     description: 'This is project 5',
     image: './imgs-p/popup-img.png',
     tech: ['Ruby on rials', 'CSS', 'JavaScript', 'HTML'],
@@ -69,7 +74,8 @@ const projects = {
   },
 
   project6: {
-    title: ['Multi-Post Stories', 'Gain+Glory'],
+    id: 6,
+    title: 'Multi-Post Stories Gain+Glory',
     description: 'This is project 6',
     image: './imgs-p/popup-desktop.png',
     tech: ['Ruby on rials', 'CSS', 'JavaScript', 'HTML'],
@@ -77,6 +83,55 @@ const projects = {
     source: '#',
   },
 };
+
+// Projects section code
+
+const worksSection = document.querySelector('.works-section');
+
+const sectionTitle = document.createElement('h1');
+sectionTitle.innerHTML = 'My Recent Works';
+worksSection.appendChild(sectionTitle);
+
+const titleUnderline = document.createElement('img');
+titleUnderline.src = 'imgs-p/Indicator.png';
+titleUnderline.className = 'line';
+worksSection.appendChild(titleUnderline);
+
+const cards = document.createElement('div');
+cards.className = 'cards';
+worksSection.appendChild(cards);
+
+Object.values(projects).forEach((values) => {
+  const card = document.createElement('div');
+  card.className = 'card';
+  cards.appendChild(card);
+
+  const projectImg = document.createElement('img');
+  projectImg.src = values.image;
+  card.appendChild(projectImg);
+
+  const textContainer = document.createElement('div');
+  textContainer.className = 'text-container';
+  card.appendChild(textContainer);
+
+  const containerTitle = document.createElement('h1');
+  containerTitle.textContent = values.title;
+  textContainer.appendChild(containerTitle);
+
+  const containerUl = document.createElement('ul');
+  values.tech.forEach((tech) => {
+    const containerLi = document.createElement('li');
+    containerLi.textContent = tech;
+    containerUl.appendChild(containerLi);
+  });
+  textContainer.appendChild(containerUl);
+
+  const seeBtn = document.createElement('button');
+  seeBtn.className = 'see-btn';
+  seeBtn.setAttribute('id', `project${values.id}-btn`);
+  seeBtn.textContent = 'See project';
+  textContainer.appendChild(seeBtn);
+});
 
 // Popup window code
 
