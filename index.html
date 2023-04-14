@@ -101,11 +101,12 @@
             <h2 id="contact">
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
             </h2>
-            <form  action="https://formspree.io/f/xjvdavel" method="POST">
+            <form class="form" action="https://formspree.io/f/xjvdavel" method="POST">
                 <input type="text" name="name" id="" maxlength="30" placeholder="Full name" required>
-                    <input type="email" name="email" id="" placeholder="Email address" required>
-                    <textarea name="message" id="" cols="30" rows="5" maxlength="500" placeholder="Hey I'd like to connect to..." required></textarea>
-                <button type="submit">Get in touch</button>
+                <input class="email-input" type="email" name="email" id="" placeholder="Email address" required>
+                <div class="error-msg-div"></div>
+                <textarea name="message" id="" cols="30" rows="5" maxlength="500" placeholder="Hey I'd like to connect to..." required></textarea>
+                <button class="submit-btn" type="submit">Get in touch</button>
             </form>
         </section>
         <footer class="footer">

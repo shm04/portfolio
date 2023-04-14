@@ -191,3 +191,24 @@ seeBtn.forEach((seeBtn) => {
     });
   });
 });
+
+// Form validation
+
+const form = document.querySelector('.form');
+const emailInput = document.querySelector('.email-input');
+const errorDiv = document.querySelector('.error-msg-div');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (emailInput.value === emailInput.value.toLowerCase()) {
+    form.submit();
+  } else {
+    errorDiv.style.display = 'block';
+    const errorMsg = document.createElement('p');
+    errorMsg.className = 'error-msg';
+    errorMsg.textContent = 'Email must be typed in lower case.';
+    errorDiv.appendChild(errorMsg);
+    emailInput.style.border = '1px solid red';
+  }
+});
