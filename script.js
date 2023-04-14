@@ -1,5 +1,3 @@
-// Mobile menu code
-
 const navMenu = document.querySelector('.nav-menu');
 const menuBtn = document.getElementById('menu-btn');
 const navLink = document.querySelectorAll('.nav-link');
@@ -192,7 +190,7 @@ seeBtn.forEach((seeBtn) => {
   });
 });
 
-// Form validation
+// validation form
 
 const form = document.querySelector('.form');
 const emailInput = document.querySelector('.email-input');

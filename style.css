@@ -110,7 +110,7 @@ h3 {
   flex-direction: column;
 }
 
-.works-section h1 {
+.works-section h2 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -136,7 +136,9 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 26px 0 28px;
+  position: relative;
+  width: 86%;
+  margin: 0 7% 0 7%;
 }
 
 .card img {
@@ -144,17 +146,19 @@ h3 {
 }
 
 .text-container {
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fff;
   border-radius: 8px;
-  width: 100%;
+  width: 99.5%;
   border: 1px solid #d0d9d4;
 }
 
-.text-container h1 {
+.text-container h2 {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -167,7 +171,7 @@ h3 {
 .text-container ul {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   list-style: none;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -177,7 +181,6 @@ h3 {
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
-  gap: 8px;
 }
 
 .about-me-card li {
@@ -187,14 +190,23 @@ h3 {
   margin: 0 8px 8px 0;
 }
 
-.text-container li {
+.text-container li:nth-child(1),
+.text-container li:nth-child(2),
+.text-container li:nth-child(3) {
+  background-color: #ebf0ee;
+  padding: 8px 12px 8px 12px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.html-li {
   background-color: #ebf0ee;
   padding: 8px 12px 8px 12px;
   border-radius: 4px;
 }
 
 .text-container button {
-  margin: 21px 0 24px 0;
+  margin: 29px 0 24px 0;
   width: 122px;
   height: 48px;
   background-color: #1e488f;
@@ -546,10 +558,6 @@ h3 {
     gap: 20px;
   }
 
-  .navbar button {
-    display: none;
-  }
-
   .navbar img {
     display: none;
   }
@@ -561,6 +569,13 @@ h3 {
     color: #172b4d;
     font-weight: 600;
     transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+  }
+
+  .navbar a:hover {
+    transform: scale(1.2);
+    background-color: #172b4d;
+    color: #fff;
     border-radius: 15px;
   }
 
@@ -594,7 +609,7 @@ h3 {
     margin: 0 8% 0 8%;
   }
 
-  .works-section h1 {
+  .works-section h2 {
     padding: 100px 0 52px 0;
     margin: 0;
   }
@@ -609,11 +624,7 @@ h3 {
     grid-column-gap: 24px;
   }
 
-  .text-container {
-    height: 280px;
-  }
-
-  .text-container h1 {
+  .text-container h2 {
     padding: 0;
     margin: 16px;
   }
@@ -691,76 +702,5 @@ h3 {
 
   .email {
     display: none;
-  }
-
-  .popup-main {
-    width: 100%;
-    height: 100%;
-  }
-
-  .popup {
-    width: 80%;
-    height: 80%;
-  }
-
-  .close-button {
-    display: none;
-  }
-
-  .close-button-desktop {
-    display: block;
-    align-self: flex-end;
-    background: none;
-    border: none;
-    padding: 0;
-  }
-
-  .close-button-desktop:hover {
-    transform: scale(1.1);
-  }
-
-  .popup-img {
-    width: 100%;
-    min-height: 40%;
-  }
-
-  .cont-row {
-    display: flex;
-  }
-
-  .popup h1 {
-    width: 50%;
-    font-weight: 700;
-    padding: 24px 0 20px 0;
-    text-align: start;
-  }
-
-  .buttons {
-    align-items: flex-start;
-    justify-content: flex-end;
-    margin-top: 27px;
-    width: 50%;
-    flex-wrap: wrap;
-  }
-
-  .buttons a {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .two {
-    display: flex;
-  }
-
-  .one {
-    display: none;
-  }
-
-  .navbar a:hover {
-    transform: scale(1.2);
-    background-color: #172b4d;
-    color: #fff;
-    border-radius: 15px;
   }
 }
