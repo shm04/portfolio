@@ -190,15 +190,6 @@ h3 {
   margin: 0 8px 8px 0;
 }
 
-.text-container li:nth-child(1),
-.text-container li:nth-child(2),
-.text-container li:nth-child(3) {
-  background-color: #ebf0ee;
-  padding: 8px 12px 8px 12px;
-  margin-right: 8px;
-  border-radius: 4px;
-}
-
 .html-li {
   background-color: #ebf0ee;
   padding: 8px 12px 8px 12px;
@@ -535,6 +526,15 @@ h3 {
 
 .nav-menu a:hover {
   text-decoration: underline;
+}
+
+.text-container li:nth-child(1),
+.text-container li:nth-child(2),
+.text-container li:nth-child(3) {
+  background-color: #ebf0ee;
+  padding: 8px 12px 8px 12px;
+  margin-right: 8px;
+  border-radius: 4px;
 }
 
 @media screen and (min-width: 768px) {
