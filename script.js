@@ -23,12 +23,12 @@ navLink.forEach((navLink) => {
 const projects = {
   project1: {
     id: 1,
-    title: 'Keeping track of hundreds of components',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo error impedit odit blanditiis ducimus ipsum, tenetur repudiandae aperiam repellat. Vero deserunt porro necessitatibus dolor adipisci, suscipit quo laborum beatae quam.',
-    image: './imgs-p/popup-img.png',
-    tech: ['Ruby on rials', 'CSS', 'JavaScript'],
-    liveVersion: '#',
-    source: '#',
+    title: 'Rolling Loud Festival information webpage.',
+    description: 'In this webpage oyu can find information about Rolling Loud Festival in California 2023.',
+    image: './imgs-p/project-1.png',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    liveVersion: 'https://shm04.github.io/first-capstone-project/',
+    source: 'https://github.com/shm04/first-capstone-project',
   },
 
   project2: {
