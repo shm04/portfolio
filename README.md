@@ -38,7 +38,7 @@ This is my personal portfolio, where you can find my projects and contact me.
   </ul>
 
   <ul>
-    <li><a href=https://www.w3schools.com/css/css3_flexbox.asp>Flexbox</a></li>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScript</a></li>
   </ul>
 
 ### Key Features <a name="key-features"></a>

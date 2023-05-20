@@ -1,5 +1,3 @@
-// Mobile menu code
-
 const navMenu = document.querySelector('.nav-menu');
 const menuBtn = document.getElementById('menu-btn');
 const navLink = document.querySelectorAll('.nav-link');
@@ -190,4 +188,25 @@ seeBtn.forEach((seeBtn) => {
       });
     });
   });
+});
+
+// validation form
+
+const form = document.querySelector('.form');
+const emailInput = document.querySelector('.email-input');
+const errorDiv = document.querySelector('.error-msg-div');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (emailInput.value === emailInput.value.toLowerCase()) {
+    form.submit();
+  } else {
+    errorDiv.style.display = 'block';
+    const errorMsg = document.createElement('p');
+    errorMsg.className = 'error-msg';
+    errorMsg.textContent = 'Email must be typed in lower case.';
+    errorDiv.appendChild(errorMsg);
+    emailInput.style.border = '1px solid red';
+  }
 });
