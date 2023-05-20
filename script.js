@@ -105,6 +105,7 @@ Object.values(projects).forEach((values) => {
   cards.appendChild(card);
 
   const projectImg = document.createElement('img');
+  projectImg.className = 'card-img';
   projectImg.src = values.image;
   card.appendChild(projectImg);
 
@@ -113,6 +114,7 @@ Object.values(projects).forEach((values) => {
   card.appendChild(textContainer);
 
   const containerTitle = document.createElement('h1');
+  containerTitle.className = 'card-title';
   containerTitle.textContent = values.title;
   textContainer.appendChild(containerTitle);
 

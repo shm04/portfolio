@@ -139,9 +139,10 @@ h3 {
   position: relative;
   width: 86%;
   margin: 0 7% 0 7%;
+  height: 500px;
 }
 
-.card img {
+.card-img {
   width: 100%;
 }
 
@@ -158,7 +159,7 @@ h3 {
   border: 1px solid #d0d9d4;
 }
 
-.text-container h2 {
+.card-title {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -407,6 +408,12 @@ h3 {
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  width: 80%;
+  height: 80%;
+}
+
+.popup-img {
+  height: 60%;
 }
 
 .close-button-desktop {
@@ -624,7 +631,7 @@ h3 {
     grid-column-gap: 24px;
   }
 
-  .text-container h2 {
+  .card-title {
     padding: 0;
     margin: 16px;
   }
