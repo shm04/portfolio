@@ -480,6 +480,19 @@ h3 {
   border: none;
 }
 
+.error-msg-div {
+  display: none;
+}
+
+.error-msg {
+  border: solid 1px red;
+  border-radius: 8px;
+  color: red;
+  padding: 6px;
+  width: fit-content;
+  margin: 5px 0 0 0;
+}
+
 .buttons a:hover {
   box-shadow: 0 5px 15px rgba(30, 72, 143, 0.24);
   border: 1px solid #1e488f;
