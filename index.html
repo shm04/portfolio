@@ -3,6 +3,12 @@
   <head>
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
@@ -28,9 +34,10 @@
       <h2>Projects</h2>
       <div class="project-div">
         <div class="img-div">
-          <img src="assets/imagen.jpeg" alt="Dynamic image" />
+          <img src="assets/imagen.png" alt="Dynamic image" />
         </div>
         <div class="p-div">
+          <h3>Project Name</h3>
           <p id="p1" class="scroll-paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eum
             mollitia? Magnam doloribus aliquid, nobis nulla consectetur quasi
@@ -41,7 +48,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <!-- <section class="about">
       <h2>About me</h2>
       <p>
         I'm a software developer based in Mexico State, Mexico specializing in
@@ -52,55 +59,76 @@
       <div class="skills-container">
         <div class="skills-img">
           <img src="assets/lang.jpeg" alt="Languages" />
-          <div class="text-vertical">Languages</div>
+          <div class="text-vertical">
+            <p>Languages</p>
+          </div>
           <div class="icon-center">
-            <img src="assets/language.png" alt="lang-icon">
+            <img src="assets/language.png" alt="lang-icon" />
           </div>
         </div>
         <div class="skills-img">
           <img src="assets/frames.jpg" alt="Frameworks" />
-          <div class="text-vertical">Frameworks</div>
+          <div class="text-vertical">
+            <p>Frameworks</p>
+          </div>
           <div class="icon-center">
-            <img src="assets/framework.png" alt="">
+            <img src="assets/framework.png" alt="" />
           </div>
         </div>
         <div class="skills-img">
           <img src="assets/skills.jpg" alt="Skills" />
-          <div class="text-vertical">Skills</div>
+          <div class="text-vertical">
+            <p>Skills</p>
+          </div>
           <div class="icon-center">
-            <img src="assets/skills.png" alt="">
+            <img src="assets/skills.png" alt="" />
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section>
+    <section class="contact">
       <h2>
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </h2>
-      <div>
-        <h3>E-mail</h3>
-        <p>sebastian4hm@gmail.com</p>
+      <div class="mail-wa">
         <div>
-          <button>Copy</button>
-          <button>Send an email</button>
+          <h3>
+            <img
+              class="contact-logo"
+              src="assets/gmail.png"
+              alt="gmail logo"
+            />E-mail
+          </h3>
+          <p>sebastian4hm@gmail.com</p>
+          <div>
+            <button>Copy</button>
+            <button>Send an e-mail</button>
+          </div>
         </div>
-      </div>
-      <div>
-        <h3>Whatsapp</h3>
-        <p>+52 5566599796</p>
         <div>
-          <button>Copy</button>
-          <button>Send a Whatsapp</button>
+          <h3>
+            <img
+              class="contact-logo"
+              src="assets/whatsapp.png"
+              alt="Whatsapp logo"
+            />Whatsapp
+          </h3>
+          <p>+52 55 66 59 97 96</p>
+          <div>
+            <button>Copy</button>
+            <button>Send a Whatsapp</button>
+          </div>
         </div>
       </div>
     </section>
 
     <footer>
-      <p>Copyrigth 2021</p>
-      <div>
-        <img src="assets/imagen.jpeg" alt="logo " />
+      <p>© 2021 Sebastián Hernández. All rights reserved.</p>
+      <div class="images-cont">
+        <img src="assets/github.png" alt="github" />
+        <img src="assets/linkedin.png" alt="linkedin" />
       </div>
     </footer>
   </body>
