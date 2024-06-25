@@ -1,0 +1,171 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+
+nav {
+  border-bottom: 1px solid #eaeaea;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Home */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.home h1 {
+  font-size: 45px;
+}
+
+.home h2 {
+  font-size: 40px;
+  margin: 0 0 45px 0;
+}
+
+.home p {
+  font-size: 20px;
+  margin: 0 20%;
+}
+
+/* Projects */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 100px 0;
+}
+
+.projects h2 {
+  font-size: 35px;
+  margin: 0 0 70px 0;
+}
+
+.project-div {
+  display: flex;
+  width: 100%;
+}
+
+.img-div {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+.img-div img {
+  margin-right: 10%;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.p-div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.p-div p {
+  font-size: 20px;
+  margin: 0 20% 0 10%;
+}
+
+/* About */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 100px 0;
+}
+
+.about h2 {
+  font-size: 35px;
+  margin: 0 0 70px 0;
+}
+
+.about p {
+  font-size: 20px;
+  margin: 0 20%;
+}
+
+.about button {
+  margin: 50px 0;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.skills-container {
+  position: relative;
+  width: fit-content;
+  display: flex;
+}
+
+.skills-img {
+  position: relative;
+  width: 33.3%;
+  height: 250px;
+}
+
+.skills-img img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.text-vertical {
+  position: absolute;
+  transform: rotate(-90deg) skewY(10deg);
+  transform-origin: left top;
+  white-space: nowrap;
+  color: white;
+  z-index: 2;
+  background-color: blue;
+  width: 250px;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.icon-center img {
+  width: 25px;
+}
