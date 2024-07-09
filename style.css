@@ -27,6 +27,13 @@ p {
   min-height: calc(100vh - 260px);
 }
 
+button:active,
+.about a:active,
+.contact-info a:active {
+  box-shadow: inset 0 0 8px #055791;
+  transform: scale(0.95);
+}
+
 /* Navbar */
 
 nav {
@@ -38,6 +45,10 @@ nav {
   border-bottom: #1b5eb5;
   z-index: 1000;
   height: 80px;
+}
+
+.nav-link.active {
+  text-decoration: underline;
 }
 
 nav ul {
@@ -58,7 +69,7 @@ nav a {
   font-size: 18px;
 }
 
-nav a:hover {
+nav a:active {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
@@ -71,18 +82,18 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   padding: 130px 0 50px 0;
-  background-color: #edf9fd;
+  background-color: #CAF0F8;
 }
 
 .home h1 {
   font-size: 40px;
 }
 
-.home img {
+.profile-pic {
   width: 200px;
   margin: 50px;
   border-radius: 100%;
-  border: 1px solid #c5c5c5;
+  border: 5px solid #008fff;
 }
 
 .home h2 {
@@ -102,6 +113,10 @@ nav a:hover {
   margin: 50px 0;
 }
 
+.images-home img:hover {
+  transform: scale(1.1);
+}
+
 .images-home img {
   width: 35px;
   margin: 0 10px;
@@ -112,21 +127,21 @@ nav a:hover {
 .projects {
   display: flex;
   flex-direction: column;
+  width: 100%;
   align-items: center;
-  justify-content: center;
   padding: 50px 0;
 }
 
 .projects h2 {
   font-size: 35px;
-  margin: 0 0 70px 0;
+  margin: 50px 0 50px 0;
 }
 
 .project-div {
   display: flex;
-  height: 300px;
+  align-items: center;
   width: 100%;
-  margin: 100px 0;
+  margin: auto;
 }
 
 .img-div {
@@ -134,6 +149,7 @@ nav a:hover {
   height: 100%;
   display: flex;
   justify-content: end;
+  align-items: center;
 }
 
 .img-div img {
@@ -142,14 +158,11 @@ nav a:hover {
   height: 300px;
   width: 300px;
   object-fit: cover;
-  height: auto;
 }
 
 .p-main-div {
   width: 50%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .p-div {
@@ -157,7 +170,6 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 
 .p-div h3 {
@@ -171,6 +183,31 @@ nav a:hover {
   text-align: center;
 }
 
+.next-btn {
+  background-color: #0496ff00;
+  border: none;
+  height: fit-content;
+  border-radius: 100%;
+  padding: 0;
+  display: flex;
+  margin-right: 100px;
+}
+
+.back-btn {
+  background-color: #0496ff00;
+  border: none;
+  height: fit-content;
+  border-radius: 100%;
+  padding: 0;
+  display: flex;
+  margin-left: 100px;
+}
+
+.disabled {
+  filter: opacity(0.5);
+  cursor: not-allowed;
+}
+
 /* About */
 
 .about {
@@ -179,8 +216,8 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   padding: 50px 0;
-  background-color: #edf9fd;
   overflow-x: hidden;
+  background-color: #CAF0F8;
 }
 
 .about h2 {
@@ -194,18 +231,19 @@ nav a:hover {
   text-align: center;
 }
 
-.about button {
+.about a {
   margin: 50px 0 100px 0;
   padding: 10px 20px;
   font-size: 20px;
-  background-color: #edf9fd;
+  background-color: #ffffff00;
   color: #172b4d;
   border: 1px solid #163a7d;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-button:hover {
+.about a:hover {
   background-color: #0496ff;
   border: solid 1px #0496ff;
   color: #fff;
@@ -216,6 +254,7 @@ button:hover {
   width: 100%;
   display: flex;
   transform: skewX(-10deg);
+  transition: transform 0.5s ease;
 }
 
 .skills-img {
@@ -239,7 +278,6 @@ button:hover {
   white-space: nowrap;
   color: white;
   z-index: 2;
-  background-color: #0496ff;
   width: 270px;
   height: 25%;
   display: flex;
@@ -255,26 +293,119 @@ button:hover {
   justify-content: center;
   align-items: end;
   transform-origin: left top;
-  background-color: #0496ff;
   top: -30px;
   position: absolute;
   color: #fff;
 }
 
+#tv-one,
+#tv-one p {
+  background-color: #fd8502;
+}
+
+#tv-two,
+#tv-two p {
+  background-color: #008fff;
+}
+
+#tv-three,
+#tv-three p {
+  background-color: #81d685;
+}
+
 .icon-center {
   position: absolute;
   top: 50%;
-  left: 60%;
+  left: 50%;
   transform: translate(-50%, -50%) skewX(10deg);
   z-index: 2;
   background-color: white;
   padding: 15px;
   border-radius: 50px;
+  border: solid 5px;
 }
 
 .icon-center img {
-  width: 50px;
+  width: 60px;
   transform: skewX(0deg);
+}
+
+.skills-hover {
+  display: none;
+  height: 270px;
+  width: 100%;
+}
+
+.skills-img:hover .skills-hover {
+  display: flex;
+}
+
+.s-hover-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-img {
+  height: 210px;
+  width: 250px;
+  border: 5px solid red;
+  border-radius: 10px;
+  transform: skewX(-10deg);
+  overflow: hidden;
+}
+
+.hover-img-img {
+  position: absolute;
+  left: -20px;
+  height: 210px;
+  width: 300px;
+  object-fit: cover;
+  transform: skewX(10deg);
+}
+
+.s-hover-p {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.s-icon-center {
+  position: absolute;
+  left: 30%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 100%;
+  border: 5px solid red;
+  transition: transform 0.5s ease;
+}
+
+.s-icon-center img {
+  width: 60px;
+}
+
+.skills-list {
+  list-style: none;
+  margin: 24px 0 24px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1e488f;
+  width: 300px;
+}
+
+.skills-list li {
+  background-color: #ffffff00;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 0 8px 8px 0;
 }
 
 /* Contact */
@@ -299,6 +430,24 @@ button:hover {
   width: 100%;
 }
 
+.contact-info {
+  position: relative;
+}
+
+.copy-msg {
+  position: absolute;
+  bottom: 5px;
+  left: -80px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #f0f2f5;
+  color: gray;
+  border: 1px solid #f0f2f5;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
 .mail-wa h3 {
   font-size: 20px;
   display: flex;
@@ -314,8 +463,9 @@ button:hover {
   font-size: 20px;
 }
 
-.mail-wa button {
-  padding: 10px 10px;
+.mail-wa button,
+.mail-wa a {
+  padding: 10px;
   margin-right: 20px;
   font-size: 15px;
   font-weight: 500;
@@ -324,9 +474,11 @@ button:hover {
   border: 1px solid #163a7d;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-button:hover {
+.mail-wa button:hover,
+.mail-wa a:hover {
   background-color: #0496ff;
   border: solid 1px #0496ff;
   color: #fff;
@@ -341,6 +493,7 @@ footer {
   background-color: #f0f2f5;
   color: #000;
   padding: 20px 0;
+  border-top: solid 1px #dadada;
 }
 
 footer p {
@@ -351,4 +504,8 @@ footer p {
 footer img {
   width: 35px;
   padding: 0 5px;
+}
+
+footer img:hover {
+  transform: scale(1.1);
 }
