@@ -13,16 +13,16 @@
   <body>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="proyects.html">Projects</a></li>
-        <li><a href="about.html">About me</a></li>
-        <li><a href="contact.html">Contact me</a></li>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#about" class="nav-link">About me</a></li>
+        <li><a href="#contact" class="nav-link">Contact me</a></li>
       </ul>
     </nav>
 
-    <section class="home">
+    <section id="home" class="home">
       <h1>Hey there. I'm Sebastián Hernández.</h1>
-      <img src="assets/profile-pic.png" alt="profile pic">
+      <img class="profile-pic" src="assets/profile-pic.png" alt="profile pic" />
       <h2>I'm a software developer</h2>
       <p>
         I can help you build a product, feature or website. Look through some of
@@ -30,99 +30,112 @@
         need coded, don't hesitate to contact me.
       </p>
       <div class="images-home">
-        <img src="assets/github.png" alt="github" />
-        <img src="assets/linkedin.png" alt="linkedin" />
-        <img src="assets/gmail.png" alt="gmail logo" />
-        <img src="assets/whatsapp.png" alt="Whatsapp logo" />
+        <a href="https://github.com/shm04"><img src="assets/github.png" alt="github" /></a>
+        <a href="https://www.linkedin.com/in/sebastian-hernandez-munoz/"><img src="assets/linkedin.png" alt="linkedin" /></a>
+        <a href="mailto:sebastian4hm@gmail.com"><img src="assets/gmail.png" alt="gmail logo" /></a>
+        <a href="https://wa.me/525566599796"><img src="assets/whatsapp.png" alt="Whatsapp logo" /></a>
       </div>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
       <h2>Projects</h2>
       <div class="project-div">
+        <button class="back-btn"><img src="assets/back.png" alt="back-button"></button>
         <div class="img-div">
-          <img src="assets/imagen.png" alt="Dynamic image" />
+          <img src="assets/project_one.png" alt="Dynamic image" />
         </div>
         <div class="p-main-div">
-          <div class="p-div">
+          <div id="one" class="p-div">
             <h3>Project One</h3>
-            <p id="p1" class="scroll-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-              eum mollitia? Magnam doloribus aliquid, nobis nulla consectetur
-              quasi deserunt necessitatibus ab, pariatur neque earum saepe,
-              obcaecati ipsa quaerat dolores non.
+            <p class="scroll-paragraph">
+              Proyecto uno
             </p>
           </div>
 
-          <!-- <div class="p-div">
+          <div id="two" class="p-div">
             <h3>Project Two</h3>
-            <p id="p1" class="scroll-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-              eum mollitia? Magnam doloribus aliquid, nobis nulla consectetur
-              quasi deserunt necessitatibus ab, pariatur neque earum saepe,
-              obcaecati ipsa quaerat dolores non.
+            <p class="scroll-paragraph">
+              Proyecto dos
             </p>
           </div>
 
-          <div class="p-div">
+          <div id="three" class="p-div">
             <h3>Project Three</h3>
-            <p id="p1" class="scroll-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-              eum mollitia? Magnam doloribus aliquid, nobis nulla consectetur
-              quasi deserunt necessitatibus ab, pariatur neque earum saepe,
-              obcaecati ipsa quaerat dolores non.
+            <p class="scroll-paragraph">
+              Proyecto tres
             </p>
-          </div> -->
+          </div>
+          <div id="four" class="p-div">
+            <h3>Project Four</h3>
+            <p class="scroll-paragraph">
+              Proyecto cuatro
+            </p>
+          </div>
         </div>
+        <button class="next-btn"><img src="assets/next.png" alt="next-button"></button>
       </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
       <h2>About me</h2>
       <p>
         I'm a software developer based in Mexico State, Mexico specializing in
         building and designing exceptional websites, applications, and
         everything in between.
       </p>
-      <button>Get my resume</button>
+      <a href="assets/Resume.pdf">Get my resume</a>
       <div class="skills-container">
-        <div class="skills-img">
+        <div class="skills-img" data-border-color="#FD8502">
           <img src="assets/lang.jpeg" alt="Languages" />
-          <div class="text-vertical">
+          <div id="tv-one" class="text-vertical">
             <p>Languages</p>
           </div>
-          <div class="icon-center">
+          <div class="icon-center" style="border-color: #FD8502;" >
             <img src="assets/language.png" alt="lang-icon" />
           </div>
         </div>
-        <div class="skills-img">
+        <div class="skills-img" data-border-color="#008FFF">
           <img src="assets/frames.jpg" alt="Frameworks" />
-          <div class="text-vertical">
+          <div id="tv-two" class="text-vertical">
             <p>Frameworks</p>
           </div>
-          <div class="icon-center">
+          <div class="icon-center" style="border-color: #008FFF;">
             <img src="assets/framework.png" alt="" />
           </div>
         </div>
-        <div class="skills-img">
+        <div class="skills-img" data-border-color="#81D685">
           <img src="assets/skills.jpg" alt="Skills" />
-          <div class="text-vertical">
+          <div id="tv-three" class="text-vertical">
             <p>Skills</p>
           </div>
-          <div class="icon-center">
+          <div class="icon-center" style="border-color: #81D685;">
             <img src="assets/skills.png" alt="" />
           </div>
         </div>
       </div>
+      <div class="skills-hover">
+        <div class="s-hover-img">
+          <div class="hover-img">
+            <img class="hover-img-img" alt="Dynamic image" />
+          </div>
+          <div class="s-icon-center" style="border-color: #81D685;">
+            <img class="icon" alt="lang-icon" />
+          </div>
+        </div>
+        <div class="s-hover-p">
+          <ul class="skills-list">
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <h2>
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </h2>
       <div class="mail-wa">
-        <div>
+        <div class="contact-info">
           <h3>
             <img
               class="contact-logo"
@@ -132,22 +145,22 @@
           </h3>
           <p>sebastian4hm@gmail.com</p>
           <div>
-            <button>Copy</button>
-            <button>Send an e-mail</button>
+            <button onclick="copyToClipboard('sebastian4hm@gmail.com', event)">Copy</button>
+            <a href="mailto:sebastian4hm@gmail.com">Send an e-mail</a>
           </div>
         </div>
-        <div>
+        <div class="contact-info">
           <h3>
             <img
               class="contact-logo"
               src="assets/whatsapp.png"
               alt="Whatsapp logo"
-            />Whatsapp
+            />WhatsApp
           </h3>
           <p>+52 55 66 59 97 96</p>
           <div>
-            <button>Copy</button>
-            <button>Send a Whatsapp</button>
+            <button onclick="copyToClipboard('+525566599796', event )">Copy</button>
+            <a href="https://wa.me/525566599796">Send a WhatsApp</a>
           </div>
         </div>
       </div>
@@ -156,9 +169,10 @@
     <footer>
       <p>© 2024 Sebastián Hernández. All rights reserved.</p>
       <div class="images-cont">
-        <img src="assets/github.png" alt="github" />
-        <img src="assets/linkedin.png" alt="linkedin" />
+        <a href="https://github.com/shm04"><img src="assets/github.png" alt="github" /></a>
+        <a href="https://www.linkedin.com/in/sebastian-hernandez-munoz/"><img src="assets/linkedin.png" alt="linkedin" /></a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
